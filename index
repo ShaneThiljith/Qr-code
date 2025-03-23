@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Display</title>
+    <style>
+        /* Basic styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .qr-code-container {
+            text-align: center;
+            border: 2px solid #ddd;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .qr-code-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .qr-code-container h2 {
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        .qr-code-container p {
+            color: #777;
+            font-size: 1em;
+        }
+
+        .qr-code-container .download-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .qr-code-container .download-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="qr-code-container">
+        <h2>Your QR Code</h2>
+        <!-- Example of how to embed a QR code image -->
+        <img src="path_to_your_qr_code_image.png" alt="QR Code">
+        <p>This QR code was generated for the text or URL you entered.</p>
+        <a href="path_to_your_qr_code_image.png" class="download-btn" download>Download QR Code</a>
+    </div>
+</body>
+</html>
